@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Kanban Board</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="board">
+            <form id="todo-form">
+                <input type="text" placeholder="TODO" id="todo-input">
+                <button type="submit">Add</button>
+            </form>
+
+            <div class="lanes">
+                <div class="swim-lanes" id="todo-lane">
+                    <h3 class="heading">TODO</h3>
+
+                    <p class="task" draggable="true">bully bingbong</p>
+                </div>
+
+                <div class="swim-lanes">
+                    <h3 class="heading">In Progress</h3>
+
+                    <p class="task" draggable="true">bully bingbong and pee my pants and eat cream cheese and inhale boba</p>
+                </div>
+
+                <div class="swim-lanes">
+                    <h3 class="heading">Done</h3>
+
+                    <p class="task" draggable="true">bully bingbong</p>
+                </div>
+            
+            </div>
+        </div>
+
+        <script src="todo.js" defer></script>
+        <script src="drag.js" defer></script>
+    </body>
+</html>
